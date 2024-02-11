@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .sidebar-left {
+            margin-right: 20px;
+        }
+
+        .sidebar-right {
+            margin-left: 20px;
+        }
+
+        .dashboard-section {
+            margin-bottom: 20px;
+        }
+
+        .dashboard-section h2 {
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .dashboard-section h2:hover{
+            font-size: 20px;
+            margin-bottom: 10px;
+            background-color: aquamarine;
+        }
+        .dashboard-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dashboard-section a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .news-feed {
+            display: flex;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .news-item {
+            flex: 0 0 auto;
+            width: 600px;
+            margin-right: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .news-item img {
+            max-width: 100%;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .news-item h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .news-item p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .online-users {
+            height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #444;
+        }
+
+        .online-users h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .online-users ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .online-users li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .online-users li img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .online-users::-webkit-scrollbar{
+            width: 0;
+        }
+        .online-users li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .online-users li:hover{
+            color:black;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar sidebar-left">
+    <div class="dashboard-section">
+        <h2>Feed</h2>
+    </div>
+    <div class="dashboard-section">
+        <h2>Chat</h2>
+    </div>
+    <div class="dashboard-section">
+        <h2>Friends</h2>
+    </div>
+    <div class="dashboard-section">
+        <h2>Logout</h2>
+    </div>
+</div>
+
+<div class="container">
+    <h1>News Feed</h1>
+    <div class="news-feed">
+        <div class="news-item">
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+            <h2>News Title 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit ut felis tristique feugiat.</p>
+        </div>
+        <div class="news-item">
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+            <h2>News Title 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit ut felis tristique feugiat.</p>
+        </div>
+        <div class="news-item">
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+            <h2>News Title 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit ut felis tristique feugiat.</p>
+        </div>
+        
+        <!-- More news items can be added here -->
+    </div>
+</div>
+
+<div class="sidebar sidebar-right">
+    <h2>Online Users</h2>
+    <div class="dashboard-section online-users">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 1">
+                </a>
+                <span>muhaiminuk kabir</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 2">
+                </a>
+                <span>User 2</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 3">
+                </a>
+                <span>User 3</span>
+            </li>
+            <!-- Repeat the list items to create a total of 20 -->
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 4">
+                </a>
+                <span>User 4</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 5">
+                </a>
+                <span>User 5</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 6">
+                </a>
+                <span>User 6</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 7">
+                </a>
+                <span>User 7</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 8">
+                </a>
+                <span>User 8</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 9">
+                </a>
+                <span>User 9</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 10">
+                </a>
+                <span>User 10</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 11">
+                </a>
+                <span>User 11</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 12">
+                </a>
+                <span>User 12</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 13">
+                </a>
+                <span>User 13</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 14">
+                </a>
+                <span>User 14</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 15">
+                </a>
+                <span>User 15</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 16">
+                </a>
+                <span>User 16</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 17">
+                </a>
+                <span>User 17</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 18">
+                </a>
+                <span>User 18</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 19">
+                </a>
+                <span>User 19</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://via.placeholder.com/40" alt="User 20">
+                </a>
+                <span>User 20</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get the news feed container
+        const newsFeedContainer = document.querySelector(".news-feed");
+
+        // Get the width to scroll
+        const scrollAmount = 650; // Change this value to the amount you want to scroll
+
+        // Add click event listener to each news item
+        newsFeedContainer.querySelectorAll(".news-item").forEach(function(item) {
+            item.addEventListener("click", function() {
+                // Scroll horizontally by scrollAmount pixels
+                newsFeedContainer.scrollBy({
+                    left: scrollAmount,
+                    behavior: "smooth"
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>
